@@ -1,0 +1,211 @@
+/* CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Orbitron', sans-serif;
+	user-select: none;
+}
+body h1 {
+	text-align: center;
+}
+html {
+	background: url(back1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-webkit-animation: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div.game-board {
+	border-radius: 3mm;
+	border: 3px solid rgb(255, 0, 123);
+	width: 309px;
+	height: 345px;
+	margin: 0 auto;
+	box-shadow: 10px 10px 90px 15px rgb(255, 0, 212);
+}
+div[id^="row"] div:first-child {
+	border-left: none;
+}
+div[id^="row"] div:last-child {
+	border-right: none;
+}
+div[id="row-3"] div:first-child {
+	border-bottom: none;
+}
+div[id="row-3"] div:nth-child(2) {
+	border-bottom: none;
+}
+div[id="row-3"] div:last-child {
+	border-bottom: none;
+}
+div[id^="row"] {
+	margin: 0;
+	clear: both;
+}
+div[id="text"] {
+	font-family: 'Georgia', cursive;
+	font-weight: bold;
+	box-shadow: 10px 10px 40px rgb(217, 255, 0);
+	display: none;
+	border-radius: 1cm;
+	width: 340px;
+	height: 100px;
+	border: 3px solid rgb(4, 4, 4);
+	float: left;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	margin-left: -100px;
+	background-color: rgb(96, 244, 143);
+}
+section {
+	font-size: 40px;
+	font-family: 'Arial', cursive;
+}
+div[id^="row"] div {
+	width: 100px;
+	height: 100px;
+	border: 2px solid green;
+	float: left;
+}
+div.game-board h2 {
+	border-radius: 2mm;
+	border: 2.5px solid rgb(242, 0, 255);
+}
+body {
+	margin: 10px auto;
+	width: 1000px;
+	text-align: center;
+	overflow: hidden;
+}
+b {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	text-align: right;
+}
+div[id="namer"] {
+	display: none;
+	border: 2px solid;
+	width: 400px;
+	height: 210px;
+	background-color: #980393;
+	border-radius: 5mm;
+	position: absolute;
+	left: 37%;
+}
+a {
+	position: absolute;
+	right: 1%;
+	top: 1%;
+}
+button[id="mode"] {
+	background-color: rgb(183, 255, 0);
+	border: 2px solid rgb(81, 69, 69);
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Arial', cursive;
+	border-radius: 7mm;
+}
+button[id="mode"]:hover,
+button[id="marker"]:hover,
+button[id="fir"]:hover {
+	border: 2px solid rgb(128, 123, 96);
+	transform: scale(1.1);
+}
+button[id="marker"] {
+	background-color: #4b344b;
+	border: 2px solid rgb(165, 60, 60);
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Arial', cursive;
+	border-radius: 7mm;
+}
+button[id="htp"] {
+	background-color: rgb(149, 122, 163);
+	padding: 1px 8px;
+	font-weight: bold;
+	text-align: center;
+	color: goldenrod;
+	font-family: 'Arial', Bold;
+	border-radius: 5mm;
+	animation: htp-animation 10s infinite;
+}
+@keyframes htp-animation {
+	0% {
+		border: 2px solid gold;
+	}
+	25% {
+		border: 2px solid rgb(59, 35, 35);
+		transform: scale(1.1);
+	}
+	50% {
+		border: 2px solid rgb(219, 192, 192);
+		transform: scale(0.9);
+	}
+	75% {
+		border: 2px solid rgb(255, 0, 217);
+	}
+	100% {
+		border: 2px solid rgb(119, 128, 0);
+		transform: scale(1);
+	}
+}
+.cell:hover {
+	box-shadow: 0 0 10px #ccc;
+}
+.game-board:hover {
+	border: 3px solid rgb(0, 0, 0);
+	box-shadow: 0 0 10px rgb(255, 0, 183);
+	box-shadow: 10px 10px 90px 15px rgb(209, 73, 0);
+}
+h2[id="editor"]:hover {
+	font-size: 6mm;
+	border: 3.5px solid darkcyan;
+	box-shadow: 0 0 10px red;
+}
+button[id="game-reset"] {
+	background-color: rgb(113, 103, 118);
+	padding: 1px 8px;
+	font-weight: bold;
+	font-size: 0.5cm;
+	text-align: center;
+	color: rgb(73, 69, 60);
+	border-radius: 5mm;
+}
+input[id="Let's go"] {
+	background-color: rgb(141, 210, 210);
+	padding: 1px 6px;
+	font-size: 4mm;
+	text-align: center;
+	color: rgb(184, 169, 132);
+	border-radius: 5mm;
+}
+input[type="text"] {
+	border-radius: 3mm;
+	background-color: rgb(159, 12, 12);
+	font-family: 'Arial', cursive;
+}
+div[id="first"] {
+	display: none;
+	border: 2px solid;
+	width: 360px;
+	height: 150px;
+	background-color: #980303;
+	border-radius: 5mm;
+	position: absolute;
+	left: 37%;
+}
+button[id="fir"] {
+	background-color: #9b8c9b;
+	border: 2px solid rgb(0, 0, 0);
+	padding: 8px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Georgia', cursive;
+	border-radius: 7mm;
+}
